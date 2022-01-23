@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F5792382791EC0000D61E4F /* SummaryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5792372791EC0000D61E4F /* SummaryPage.swift */; };
 		7F6CC967278F53E200BDEDE5 /* Irrigation_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6CC966278F53E200BDEDE5 /* Irrigation_CalculatorApp.swift */; };
 		7F6CC969278F53E200BDEDE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6CC968278F53E200BDEDE5 /* ContentView.swift */; };
 		7F6CC96B278F53E400BDEDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F6CC96A278F53E400BDEDE5 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F5792372791EC0000D61E4F /* SummaryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPage.swift; sourceTree = "<group>"; };
 		7F6CC963278F53E200BDEDE5 /* Irrigation Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Irrigation Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6CC966278F53E200BDEDE5 /* Irrigation_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Irrigation_CalculatorApp.swift; sourceTree = "<group>"; };
 		7F6CC968278F53E200BDEDE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				7F6CC9A52791059F00BDEDE5 /* Irrigation-Calculator-Info.plist */,
 				7F6CC966278F53E200BDEDE5 /* Irrigation_CalculatorApp.swift */,
 				7F6CC968278F53E200BDEDE5 /* ContentView.swift */,
+				7F5792372791EC0000D61E4F /* SummaryPage.swift */,
 				7F6CC96A278F53E400BDEDE5 /* Assets.xcassets */,
 				7F6CC96C278F53E400BDEDE5 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5792382791EC0000D61E4F /* SummaryPage.swift in Sources */,
 				7F6CC969278F53E200BDEDE5 /* ContentView.swift in Sources */,
 				7F6CC967278F53E200BDEDE5 /* Irrigation_CalculatorApp.swift in Sources */,
 			);

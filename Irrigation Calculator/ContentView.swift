@@ -8,158 +8,81 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var dataModel: DataModel 
+    
     var body: some View {
         
-        ZStack {
+        NavigationView {
             
-            Image("pivot_1")
-                .opacity(/*@START_MENU_TOKEN@*/0.6/*@END_MENU_TOKEN@*/)
+            let navTitle = Text("Home")
             
-            
-            VStack(spacing: 25.0) {
+            ZStack {
                 
-                let frameHeight = Double(70.0)
-                
-                let buttonLabel = Text("CALCULATE")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color(hue: 0.196, saturation: 1.0, brightness: 1.0))
-                
-                let buttonLabel2 = Text("Enter")
-                    .font(.headline)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.white)
+                Image("pivot_1")
+                    .opacity(/*@START_MENU_TOKEN@*/0.6/*@END_MENU_TOKEN@*/)
+                    .padding(/*@START_MENU_TOKEN@*/.top, -40.0/*@END_MENU_TOKEN@*/)
                 
                 
-                Text("Irrigation Calculator").font(.largeTitle).fontWeight(.semibold).foregroundColor(Color(hue: 0.618, saturation: 0.908, brightness: 0.697)).dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
-                
-                
-                VStack {
+                VStack(spacing: 25.0) {
                     
-                    HStack {
-                        
-                        TextField("Water 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                            .frame(width: 180.0, height: 40.0)
-                            .border(Color.black, width: 3)
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.022, brightness: 0.373, opacity: 0.573)/*@END_MENU_TOKEN@*/)
-                        
-                        Spacer()
-                        
-                        Button("\(buttonLabel2)"){}
-                        .frame(width: 150.0, height: 40.0)
-                        .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
-                        .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        
-                    }
-                    .frame(height: frameHeight)
-                    
-                    HStack {
-                        
-                        TextField("Water 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                            .frame(width: 180.0, height: 40.0)
-                            .border(Color.black, width: 3)
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.022, brightness: 0.373, opacity: 0.573)/*@END_MENU_TOKEN@*/)
-                        
-                        Spacer()
-                        
-                        Button("\(buttonLabel2)"){}
-                        .frame(width: 150.0, height: 40.0)
-                        .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
-                        .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        
-                    }
-                    .frame(height: frameHeight)
-                    
-                    HStack {
-                        
-                        TextField("Water 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                            .frame(width: 180.0, height: 40.0)
-                            .border(Color.black, width: 3)
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.022, brightness: 0.373, opacity: 0.573)/*@END_MENU_TOKEN@*/)
-                        
-                        Spacer()
-                        
-                        Button("\(buttonLabel2)"){}
-                        .frame(width: 150.0, height: 40.0)
-                        .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
-                        .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        
-                    }
-                    .frame(height: frameHeight)
-                    
-                    HStack {
-                        
-                        TextField("Water 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                            .frame(width: 180.0, height: 40.0)
-                            .border(Color.black, width: 3)
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.022, brightness: 0.373, opacity: 0.573)/*@END_MENU_TOKEN@*/)
-                        
-                        Spacer()
-                        
-                        Button("\(buttonLabel2)"){}
-                        .frame(width: 150.0, height: 40.0)
-                        .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
-                        .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        
-                    }
-                    .frame(height: frameHeight)
-                    
-                    HStack {
-                        
-                        TextField("Water 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                            .frame(width: 180.0, height: 40.0)
-                            .border(Color.black, width: 3)
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.022, brightness: 0.373, opacity: 0.573)/*@END_MENU_TOKEN@*/)
-                        
-                        Spacer()
-                        
-                        Button("\(buttonLabel2)"){}
-                        .frame(width: 150.0, height: 40.0)
-                        .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
-                        .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        
-                    }
-                    .frame(height: frameHeight)
-                    
-                    HStack {
-                        TextField("Water 1", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                            .frame(width: 180.0, height: 40.0)
-                            .border(Color.black, width: 3)
-                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.022, brightness: 0.373, opacity: 0.573)/*@END_MENU_TOKEN@*/)
-                        
-                        Spacer()
-                        
-                        Button("\(buttonLabel2)"){}
-                        .frame(width: 150.0, height: 40.0)
-                        .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
-                        .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        
-                    }
-                    .frame(height: frameHeight)
                     Spacer()
+                    
+                    Text("Enter the depth (in inches up to 2 decimals) of the weir crest:")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 0.583, saturation: 0.628, brightness: 0.933)/*@END_MENU_TOKEN@*/)
+                        .border(/*@START_MENU_TOKEN@*/Color(hue: 0.189, saturation: 0.825, brightness: 0.925)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/5/*@END_MENU_TOKEN@*/)
+                        
+                    
+                    let buttonLabel = Text("CALCULATE")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(hue: 0.196, saturation: 1.0, brightness: 1.0))
+                    
+                    TextField("ex: 6.25", text: $dataModel.depthInInches)
+                        .padding(.leading)
+                        .frame(width: 180.0, height: 40.0)
+                        .border(Color.black, width: 3)
+                        .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.white/*@END_MENU_TOKEN@*/)
+                
+                    
+                    
+                    
+                    Spacer()
+                    
+                    
+                    //                .frame(width: 425.0, height: 650.0)
+                    
+                    NavigationLink( destination: SummaryPage().environmentObject(dataModel)) {
+                        
+                        Text("\(buttonLabel)")
+                                                .frame(width: 225.0, height: 75.0)
+                                                .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
+                                                .cornerRadius(/*@START_MENU_TOKEN@*/40.0/*@END_MENU_TOKEN@*/)
+
+                        
+                    }
+                    Spacer()
+                    
                 }
-                
                 .padding()
-                .frame(width: 400.0, height: 600.0)
-                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-                
-                //                .frame(width: 425.0, height: 650.0)
-                
-                
-                Button("\(buttonLabel)"){}
-                .frame(width: 225.0, height: 75.0)
-                .background(Color(hue: 0.618, saturation: 0.908, brightness: 0.697))
-                .cornerRadius(/*@START_MENU_TOKEN@*/40.0/*@END_MENU_TOKEN@*/)
+                .frame(width: 415.0, height: 830.0)
                 
             }
-            .padding()
-            .frame(width: 415.0, height: 830.0)
+            .navigationTitle("\(navTitle)")
+            .ignoresSafeArea(.keyboard)
         }
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(DataModel())
     }
 }
