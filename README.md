@@ -1,6 +1,6 @@
 # Overview
 
-Irrigation Calculator is the app that is able to help canal-based irrigation farmers calculate complicated water volume rates in comparison to trapezoidal (aka Ciparrelli) weirs. Being able to simple measure the depth of the water flowing over the edgs of the weir in inches, users input that number and are given back numbers in units useful to them.
+Irrigation Calculator is the app that is able to help canal-based irrigation farmers calculate complicated water volume rates in comparison to trapezoidal (aka Ciparrelli) weirs. Being able to simply measure the depth of the water flowing over the edgs of the weir in inches, users input that number and are given back numbers in units useful to them.
 
 [Software Demo Video](https://youtu.be/aKc2DOF3ktA)
 
